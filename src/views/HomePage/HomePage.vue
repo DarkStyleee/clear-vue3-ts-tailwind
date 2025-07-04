@@ -16,7 +16,7 @@
         </p>
       </div>
 
-      <!-- Сетка демо -->
+      <!-- Основные демо -->
       <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
         
         <!-- Демо 1: Слайдер-телефон -->
@@ -103,6 +103,73 @@
           </template>
         </PrimeCard>
 
+      </div>
+
+      <!-- Дополнительные демо -->
+      <div class="mb-12">
+        <h2 class="text-4xl font-bold text-white text-center mb-8">
+          ✨ Дополнительные эксперименты ✨
+        </h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <!-- Жесты-пароли -->
+          <PrimeCard class="bg-white/10 backdrop-blur-lg border border-purple-600/30 hover:border-purple-500/50 transition-all duration-300 hover:scale-105 cursor-pointer group">
+            <template #content>
+              <router-link :to="{ name: RouteName.GESTURE_PASSWORD }" class="block p-4 text-center">
+                <div class="text-5xl mb-3 group-hover:animate-pulse">🔮</div>
+                <h4 class="text-xl font-bold text-white mb-2">Магические пароли</h4>
+                <p class="text-purple-200 text-sm mb-3">
+                  Рисуйте секретные символы мышью для создания уникальных паролей!
+                </p>
+                <div class="flex flex-wrap gap-1 justify-center mb-3">
+                  <span class="px-2 py-1 bg-purple-600/30 rounded-full text-xs text-purple-200">Жесты</span>
+                  <span class="px-2 py-1 bg-indigo-600/30 rounded-full text-xs text-indigo-200">Магия</span>
+                </div>
+                <div class="text-purple-300 group-hover:text-white transition-colors text-sm">
+                  Попробовать →
+                </div>
+              </router-link>
+            </template>
+          </PrimeCard>
+
+          <!-- Лунный калькулятор -->
+          <PrimeCard class="bg-white/10 backdrop-blur-lg border border-blue-600/30 hover:border-blue-500/50 transition-all duration-300 hover:scale-105 cursor-pointer group">
+            <template #content>
+              <router-link :to="{ name: RouteName.LUNAR_CALCULATOR }" class="block p-4 text-center">
+                <div class="text-5xl mb-3 group-hover:animate-bounce">🌙</div>
+                <h4 class="text-xl font-bold text-white mb-2">Лунный калькулятор</h4>
+                <p class="text-blue-200 text-sm mb-3">
+                  Математика по законам небесных тел! Кнопки работают по лунному календарю.
+                </p>
+                <div class="flex flex-wrap gap-1 justify-center mb-3">
+                  <span class="px-2 py-1 bg-blue-600/30 rounded-full text-xs text-blue-200">Астрология</span>
+                  <span class="px-2 py-1 bg-indigo-600/30 rounded-full text-xs text-indigo-200">Математика</span>
+                </div>
+                <div class="text-blue-300 group-hover:text-white transition-colors text-sm">
+                  Считать →
+                </div>
+              </router-link>
+            </template>
+          </PrimeCard>
+
+          <!-- Заглушка для будущих демо -->
+          <PrimeCard class="bg-white/5 backdrop-blur-lg border border-gray-600/30 opacity-60">
+            <template #content>
+              <div class="p-4 text-center">
+                <div class="text-5xl mb-3">🚧</div>
+                <h4 class="text-xl font-bold text-gray-300 mb-2">Скоро...</h4>
+                <p class="text-gray-400 text-sm mb-3">
+                  Ещё больше безумных экспериментов с интерфейсами в разработке!
+                </p>
+                <div class="text-gray-500 text-sm">
+                  В ожидании →
+                </div>
+              </div>
+            </template>
+          </PrimeCard>
+
+        </div>
       </div>
 
       <!-- Дополнительная информация -->

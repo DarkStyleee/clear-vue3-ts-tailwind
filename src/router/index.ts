@@ -5,6 +5,8 @@ import PhoneSliderPage from '@/views/PhoneSliderPage';
 import ChaosVolumePage from '@/views/ChaosVolumePage';
 import CreativeFormsPage from '@/views/CreativeFormsPage';
 import NavigationHellPage from '@/views/NavigationHellPage';
+import GesturePasswordPage from '@/views/GesturePasswordPage';
+import LunarCalculatorPage from '@/views/LunarCalculatorPage';
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -33,6 +35,16 @@ const router = createRouter({
       path: RouteNames[RouteName.NAVIGATION_HELL],
       name: RouteName.NAVIGATION_HELL,
       component: NavigationHellPage
+    },
+    {
+      path: RouteNames[RouteName.GESTURE_PASSWORD],
+      name: RouteName.GESTURE_PASSWORD,
+      component: GesturePasswordPage
+    },
+    {
+      path: RouteNames[RouteName.LUNAR_CALCULATOR],
+      name: RouteName.LUNAR_CALCULATOR,
+      component: LunarCalculatorPage
     }
   ]
 });
