@@ -392,8 +392,8 @@ const escape = () => {
 }
 
 // Интервалы для хаоса
-let menuShuffleInterval: number
-let chaosInterval: number
+let menuShuffleInterval: ReturnType<typeof setInterval>
+let chaosInterval: ReturnType<typeof setInterval>
 
 onMounted(() => {
   // Перемешивание меню каждые 5 секунд
